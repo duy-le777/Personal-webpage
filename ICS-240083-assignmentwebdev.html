@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lê Anh Duy - Personal Webpage</title>
+  </head>
+
+  <body>
+    <!-- ===============================
+         HEADER SECTION
+         =============================== -->
+    <header>
+      <h1>Lê Anh Duy</h1>
+      <p>Hello! I am Duy, a college student passionate about learning, research, and cultural exploration.</p>
+      <img src="240083.jpg" alt="Photo of Lê Anh Duy" width="200">
+    </header>
+
+    <hr>
+
+    <!-- ===============================
+         ABOUT SECTION
+         =============================== -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am currently a student at Fulbright University Vietnam, studying History and Social Studies. I enjoy exploring how technology and creativity can solve real-world problems.</p>
+
+      <h3>Background & Education</h3>
+      <table border="1" cellpadding="8">
+        <tr>
+          <th>Year</th>
+          <th>Institution</th>
+          <th>Program</th>
+        </tr>
+        <tr>
+          <td>2024–Present</td>
+          <td>Fulbright University Vietnam</td>
+          <td>Bachelor of Arts in History and Social Studies</td>
+        </tr>
+        <tr>
+          <td>2021–2024</td>
+          <td>Luong The Vinh High School for the Gifted</td>
+          <td>High School Diploma</td>
+        </tr>
+      </table>
+
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML and JavaScript fundamentals</li>
+        <li>Research and writing</li>
+        <li>Analytical thinking and teamwork</li>
+      </ul>
+
+      <h3>Hobbies</h3>
+      <p>I enjoy reading, exercising, and discovering new passions through hands-on projects.</p>
+    </section>
+
+    <hr>
+
+    <!-- ===============================
+         PORTFOLIO SECTION
+         =============================== -->
+    <section id="portfolio">
+      <h2>My Projects</h2>
+      <ol>
+        <li>
+          <strong>Historical Research Project:</strong> A study on postcolonial governance in Asia.
+          <br>
+          <a href="https://example.com/project1" target="_blank">View project</a>
+        </li>
+        <li>
+          <strong>Interactive Study Simulation:</strong> Designed an educational environment called “The Islands” to test children’s responses.
+          <br>
+          <a href="https://example.com/project2" target="_blank">View project</a>
+
+        </li>
+      </ol>
+    </section>
+
+    <hr>
+
+    <!-- ===============================
+         CONTACT SECTION
+         =============================== -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <ul>
+        <li>Email: <a href="mailto:duyanh.le@gmail.com">duyanh.le@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/duyle" target_blank">linkedin.com/in/duyle</a></li>
+      </ul>
+
+      <h3>Send Me a Message</h3>
+      <form onsubmit="alert('Thank you for your message!'); return false;">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4" cols="40" required></textarea><br><br>
+
+        <input type="submit" value="Send Message">
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- ===============================
+         NOTEBOOK SECTION (Part 2)
+         =============================== -->
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Personal Notebook</title>
+  </head>
+
+  <body>
+    <h1>My Personal Notebook</h1>
+    <p>Type your note below and click "Add Note". Notes will appear below and will not be saved after page reload.</p>
+
+    <!-- Input area for typing notes -->
+    <textarea id="noteInput" rows="4" cols="50" placeholder="Write your note here..."></textarea><br><br>
+
+    <!-- Add Note button -->
+    <button id="addNoteBtn">Add Note</button>
+
+    <h2>Notes:</h2>
+
+    <!-- Section where notes will appear -->
+    <div id="notesContainer"></div>
+
+    <script>
+      // Get references to HTML elements
+      const addNoteBtn = document.getElementById("addNoteBtn");
+      const noteInput = document.getElementById("noteInput");
+      const notesContainer = document.getElementById("notesContainer");
+
+      // Listen for button click
+      addNoteBtn.addEventListener("click", function() {
+        // Get note text and remove extra spaces
+        const noteText = noteInput.value.trim();
+
+        // If input area is empty, show a notification
+        if (noteText === "") {
+          alert("Please type your note before adding!");
+          return;
+        }
+
+        // Create a new paragraph element for the note
+        const note = document.createElement("p");
+        note.textContent = noteText;
+
+        // Add the note to the display area
+        notesContainer.appendChild(note);
+
+        // Clear the input field after adding the note
+        noteInput.value = "";
+      });
+    </script>
+  </body>
+</html>
+    <hr>
+    <!-- ===============================
+         FOOTER
+         =============================== -->
+    <footer>
+      <p>© 2025 Duy Le — Personal Webpage for CS104 Assignment 2</p>
+    </footer>
+  </body>
+</html>
+
